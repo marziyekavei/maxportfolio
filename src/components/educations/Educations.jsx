@@ -2,7 +2,7 @@ import { IoIosSchool, IoMdCheckmark } from 'react-icons/io';
 
 const Educations = () => {
     return (
-        <div className='flex flex-col ml-4 sm:ml-auto align-baseline sm:flex-row sm:justify-evenly sm:items-center h-[60vh] mt-7' id='Education'>
+        <div className='flex flex-col justify-center ml-12 sm:ml-auto align-baseline sm:flex-row sm:justify-evenly sm:items-center h-[60vh] mt-7' id='Education'>
             <div className="grid justify-items-start">
                 <p className='text-3xl mb-4 font-bold'>Education</p>
                 <div className='flex justify-center items-center align-baseline'>

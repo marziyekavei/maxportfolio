@@ -30,7 +30,7 @@ const Recomms = () => {
                 <div className="overflow-hidden py-0 px-3 flex justify-center items-center relative w-[70vh] h-[800px] sm:w-[100vh] lg:w-[150vh] sm:h-[450px]">
                     {
                         recommendations.map((person, personIndex) => {
-                            const { id, name, title, img, disc } = person;
+                            const { id, name, title, img, disc, email } = person;
 
                             let position = "nextslide";
                             if (personIndex === index) {
@@ -46,7 +46,7 @@ const Recomms = () => {
                                     <h2 className='mt-3 text-justify text-slate-100'>{name}</h2>
                                     <p className='text-slate-200 mt-2'>{title}</p>
                                     <p className='text-xs sm:text-base mt-3 w-[370px] sm:w-[700px] lg:px-1 text-slate-200 text-justify'>{disc}</p>
-                                    <button className='w-20 h-9 mt-5 rounded-xl bg-slate-100 text-blue-950'>Email</button>
+                                    <button className='w-20 h-9 mt-5 rounded-xl bg-slate-100 text-blue-950'><a href={`mailto:${email}`}>Email</a></button>
                                 </article>
                             )
                         })

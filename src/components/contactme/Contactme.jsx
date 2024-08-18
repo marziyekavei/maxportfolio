@@ -16,9 +16,15 @@ const Contactme = () => {
 
     const handlesubmit = (e) => {
         e.preventDefault();
-        emailjs.send("service_2sdhwgj", "template_8wnxh79", formData, "z-pmKx2sRejKj6WyH")
+        emailjs.send("service_tr76bnk", "template_3044dj5", formData, "OS7p7dxKmMT89BA8-")
             .then((response) => {
                 console.log("succses", response)
+                setFormData({
+                    fullname: "",
+                    email: "",
+                    subject: "",
+                    description: "",
+                })
             })
             .catch((error) => [
                 console.log("faild", error)
@@ -60,7 +66,7 @@ const Contactme = () => {
                             placeholder="Description"
                             value={formData.description}
                             onChange={handleChange}
-                            className="p-4 mt-4 w-2/3 h-48 rounded-t-md rounded-b-md bg-transparent border border-solid border-gray-200"  id="" ></textarea>
+                            className="p-4 mt-4 w-2/3 h-48 rounded-t-md rounded-b-md bg-transparent border border-solid border-gray-200" id="" ></textarea>
                         <button type="submit" className="w-2/3 mt-5 rounded-t-md rounded-b-md h-10 bg-white text-blue-950 font-bold">Send Email</button>
                     </form>
                 </div>

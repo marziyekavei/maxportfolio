@@ -9,12 +9,12 @@ const Educations = () => {
                     <IoIosSchool color='#172554'/>
                     <p className='text-xl ml-1'>Msc in genetics, 2024</p>
                 </div>
-                <p className='text-base ml-4 mb-7 mt-2'>University of Arak</p>
+                <p className='text-base ml-4 mb-7 mt-2'>University of Lorem</p>
                 <div className='flex justify-center items-center align-baseline'>
                     <IoIosSchool color='#172554'/>
                     <p className='text-xl ml-1'>Bsc in biotecnology, 2019</p>
                 </div>
-                <p className='text-base ml-4 mt-2'>University of Kashan</p>
+                <p className='text-base ml-4 mt-2'>University of Lorem</p>
             </div>
 
             <div className="grid justify-items-start">

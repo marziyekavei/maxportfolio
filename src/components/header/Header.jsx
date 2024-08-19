@@ -13,10 +13,11 @@ function header() {
         <div className='flex flex-row text-3xl mt-4'>
           <a className='mr-2' target='_blank' href="https://github.com/"><IoLogoGithub color='#172554' /></a>
           <a className='mr-2' target='_blank' href="https://www.linkedin.com/"><IoLogoLinkedin color='#172554' /></a>
-          <a className='mr-2' href="mailto:mrz.kv79@gmail.com"><MdEmail color='#172554' /></a>
+          <a className='mr-2' href="mailto:maxkaveh98@gmail.com"><MdEmail color='#172554' /></a>
         </div>
       </div>
       <img src={logo} alt="" className='md:w-64 md:h-72 rounded-full' />
+      
     </div>
   )
 }
